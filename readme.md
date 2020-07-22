@@ -3,6 +3,6 @@ Este es el módulo de agendamiento de citas requerido como mónimo producto viab
 para la primera entrega.
 
 ### Requerimientos de Instalación
-- Adobe XD (Opcional Fromtemd)
+- Adobe XD (Opcional Frontend)
 - Python 3.8.3 (Opcional Backend)
 - Git 
