@@ -5,6 +5,11 @@ html {
     background-color: #F8F8F8;
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .main-container {
     position: relative;
     display: flex;
@@ -47,13 +52,33 @@ html {
 
 .container-form{
     margin: auto;
+    padding: 53px 91px;
     position: absolute;
     width: 100%;
 }
 
-.main-form{
+.form-control {
+    padding: 46px 41px 28px 25px;
+    position: relative;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 37px;
+}
+
+.label-input {
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    margin: 10px 24px;
+    color: #9F9F9Fda;
+}
+
+.project-name {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Quicksand";
 }
 
 .description {
+    padding: 287px 0;
 }
-
