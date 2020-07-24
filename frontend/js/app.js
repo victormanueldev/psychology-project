@@ -16,7 +16,7 @@ let motivo          = document.getElementById('motivo').value;
 function clickButton() {
 
     const consulta = {
-        nombre : nombre,
+        nombre,
         apellido,
         numDoc,
         edad,
@@ -26,22 +26,20 @@ function clickButton() {
         horaConsulta,
         motivo,
     }
-
-    sendToServer(consulta)
+    enviarAlServidor(consulta)
 }
 
 /**
  * RESTFUL
+ * Envia los datos a nuestro servidor
  */
-function sendToServer(dataAEnviar) {
+function enviarAlServidor(dataAEnviar) {
     axios({
         method  : 'POST', // REQUEST
-        url : "http://localhost:5000/agendar-cita",
-        data : {
-            dataAEnviar
-        }
+        url     : "http://localhost:5000/agendar-cita",
+        data    : dataAEnviar
     })
     .then( (respuesta) => { // RESPONSE
-        console.log(respuesta.data)
+        alert(respuesta.data.mensaje)
     })
 }
