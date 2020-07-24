@@ -6,8 +6,8 @@
     <title>Psychology Project | Agendar Cita</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <!-- Styles  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -27,7 +27,7 @@
                 </g>
             </svg>
         </div>
-      
+
         <!-- Main Card Container -->
         <div class="card-white col-lg-9 col-md-10 col-sm-12">
             <!-- Background Shape R-->
@@ -45,7 +45,7 @@
                     <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Union_1)">
                       <path id="Union_1-2" data-name="Union 1" d="M340.351,448.061c-45.057-10.445-87.118-23.679-125.16-39.39-40.756-16.831-76.34-36.27-105.765-57.777-29.861-21.826-52.987-45.5-68.733-70.372-16.262-25.686-24.509-52.445-24.509-79.535a135.324,135.324,0,0,1,3.252-29.369,148.577,148.577,0,0,1,9.535-28.473,178.254,178.254,0,0,1,15.485-27.418,224.935,224.935,0,0,1,21.1-26.2C81.287,72.646,100.715,56.45,123.3,41.386A513.951,513.951,0,0,1,199.55,0H852.129a20,20,0,0,1,20,20V237.281l-.013-.013V468.546C818.127,533.1,722.639,576,613.857,576,493.93,576,390.173,523.875,340.351,448.061Z" transform="translate(-8.18 9)" fill="rgba(255,200,92,0.06)"/>
                     </g>
-                  </svg>                  
+                  </svg>
             </div>
             <!-- Background Shape L-->
             <div class="backgound-left d-none d-md--block d-lg-block d-xl-block">
@@ -72,35 +72,39 @@
                   <div class="row form-container">
                     <div class="form-group col-lg-6">
                       <label class="label-input" for="nombre">Nombre(s)</label>
-                      <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group col-lg-6">
                       <label class="label-input" for="exampleInputEmail1">Apellido(s)</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group col-lg-8">
                       <label class="label-input" for="exampleInputEmail1">No. Documento</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="num-doc" aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group col-lg-4">
                       <label class="label-input" for="exampleInputEmail1">Edad</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="edad" aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group col-lg-6">
-                      <label class="label-input" for="exampleInputEmail1">Edad</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label class="label-input" for="exampleInputEmail1">Teléfono</label>
+                      <input type="text" class="form-control" id="telefono" aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group col-lg-6">
-                      <label class="label-input" for="exampleInputEmail1">Edad</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label class="label-input" for="exampleInputEmail1">Email</label>
+                      <input type="text" class="form-control" id="email" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label class="label-input" for="exampleInputEmail1">Fecha</label>
+                      <input type="date" class="form-control" id="fecha-consulta" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label class="label-input" for="exampleInputEmail1">Hora</label>
+                      <input type="time" class="form-control" id="hora-consulta" aria-describedby="emailHelp" required>
                     </div>
                     <div class="form-group col-lg-12">
-                      <label class="label-input" for="exampleInputEmail1">Edad</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group col-lg-12">
-                      <label class="label-input" for="exampleInputEmail1">Edad</label>
-                      <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                      <label class="label-input" for="exampleInputEmail1">Motivo</label>
+                      <textarea class="form-control" id="motivo" aria-describedby="emailHelp" required></textarea>
                     </div>
                   </div>
 
@@ -108,35 +112,20 @@
                 </div>
                 <!-- Descripción -->
                 <div class="description col-md-6 row justify-content-center">
-                    <div class="col-lg-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="61.378" height="64.086" viewBox="0 0 61.378 64.086">
-                        <g id="Icon_feather-package" data-name="Icon feather-package" transform="translate(-2.851 -1.427)">
-                          <path id="Path_3" data-name="Path 3" d="M67.81,8.366H10.559" transform="translate(-6 11.358)" fill="#f13649" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                          <path id="Path_4" data-name="Path 4" d="M62.58,45.626V21.266A6.036,6.036,0,0,0,59.353,16L36.766,3.819a6.788,6.788,0,0,0-6.453,0L7.727,16A6.036,6.036,0,0,0,4.5,21.266V45.626a6.036,6.036,0,0,0,3.227,5.268l22.587,12.18a6.788,6.788,0,0,0,6.453,0l22.587-12.18A6.036,6.036,0,0,0,62.58,45.626Z" transform="translate(0)" fill="#f13649" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                          <path id="Path_5" data-name="Path 5" d="M4.9,10.44l28.635,16.9,28.635-16.9" transform="translate(0 10.192)" fill="#f13649" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                          <path id="Path_6" data-name="Path 6" d="M18,44.479V18" transform="translate(15.54 19.533)" fill="#f13649" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        </g>
-                      </svg>
+
+                    <div class="col-lg-7">
+                      <img src="img/ibero-logo.png" class="img-fluid"/>
                     </div>
                     <div class="col-lg-7">
-                      <h1 class="project-name">Projet Name</h1>
+                      <h2>Gestión Citas Alumnos</h2>
                     </div>
-                    <div class="col-lg-7">
-                      <h2>Simple and Clean 
-                        Description</h2>
-                    </div>
-                    <div class="col-lg-7">
-                      <span>Lorem Ipsum is simply dummy text 
-                        of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s, </span>
-                    </div>
+                    
                 </div>
             </div>
 
         </div>
     </div>
 
-    
+
 </body>
 </html>
